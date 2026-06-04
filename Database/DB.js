@@ -4,5 +4,5 @@ mongoose.connect('mongodb+srv://mahadevi:maha%402003@cluster0.quylhuq.mongodb.ne
 .then(()=>{
     console.log("DB is connected");
 }).catch((error)=>{
-    console.log("fetching error",error);
+    console.log("DB connection or fetching error :",error);
 })

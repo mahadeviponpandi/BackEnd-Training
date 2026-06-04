@@ -13,7 +13,7 @@ const error = NameValidation.validate(nameValidator)
 console.log(error);
 
 if(error.error){
-    var result=error.datails;
+    var result=error.details;
     console.log(result);
     res.status(404).json({msg:"Un Authorized User",error:result});
 }else{
@@ -35,7 +35,7 @@ const error = PasswordValidation.validate(passwordValidator)
 console.log(error);
 
 if(error.error){
-    var result=error.datails;
+    var result=error.details;
     console.log(result);
     res.status(404).json({msg:"Un Authorized User",error:result});
 }else{
@@ -57,7 +57,7 @@ const error = PhoneValidation.validate(phoneValidator)
 console.log(error);
 
 if(error.error){
-    var result=error.datails;
+    var result=error.details;
     console.log(result);
     res.status(404).json({msg:"Un Authorized User",error:result});
 }else{
@@ -78,7 +78,7 @@ const error = EmailValidation.validate(emailValidator)
 console.log(error);
 
 if(error.error){
-    var result=error.datails;
+    var result=error.details;
     console.log(result);
     res.status(404).json({msg:"Un Authorized User",error:result});
 }else{

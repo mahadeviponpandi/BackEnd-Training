@@ -10,5 +10,7 @@ router.post('/singledata',NameValidator.NameUserValidation,RegController.userReg
 router.post('/singledatapswd',NameValidator.PasswordUserValidation,RegController.userRegistration);
 router.post('/singledataphone',NameValidator.PhoneUserValidation,RegController.userRegistration);
 router.post('/singledataemail',NameValidator.EmailUserValidation,RegController.userRegistration);
-
+router.post('/loginuser',RegController.login);
+router.get('/view',RegController.view);
+router.get('/viewbyid/:id',RegController.viewByid);
 module.exports = router;
